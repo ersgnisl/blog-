@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="h-100 d-flex flex-column">
+    <!-- navbar -->
+
+    <nav class="navbar bg-dark navbar-expand-md navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobile"
+        >
+          <i class="navbar-toggler-icon"></i>
+        </button>
+        <div id="mobile" class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="blogs.html" class="nav-link">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active">Contact</a>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              type="text"
+              class="form-control me-2"
+              placeholder="Search..."
+            />
+            <button class="btn btn-light">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section id="contact">
+      <div class="container my-2">
+        <div class="row g-4 text-center">
+          <h1 class="display-4">Contact Us</h1>
+          <div class="col-md-6">
+            <iframe
+              id="map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12028.831101703563!2d29.0441352!3d41.0863067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d2497b07c8edb2f!2zQm_En2F6acOnaSDDnG5pdmVyc2l0ZXNpIEt1emV5IEthbXDDvHPDvA!5e0!3m2!1str!2str!4v1648159246187!5m2!1str!2str"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-dark">
+              <div class="card-body">
+                <div class="alert alert-warning">Please Fill Up the Form</div>
+              </div>
+              <form class="row g-2 text-white p-1">
+                <div class="col-md-6">
+                  <label class="form-label" for="name">Name</label>
+                  <input class="form-control" type="text" id="name" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-control" type="email" id="email" />
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label" for="tel">Phone</label>
+                  <input class="form-control" type="tel" id="tel" />
+                </div>
+                <div class="col-md-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input class="form-control" type="text" id="subject" />
+                </div>
+                <div class="col-md-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                  ></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-outline-light" style="width: 100%">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark py-5 text-light mt-auto">
+      <div class="container text-center">
+        <span>All Rights Reserved. @2022</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
